@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PaladarMobileModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cabecera">
+          <Key>
+            <PropertyRef Name="Row" />
+          </Key>
+          <Property Name="iDCliente" Type="uniqueidentifier" />
+          <Property Name="FechaVenta" Type="datetime" />
+          <Property Name="Monto" Type="money" />
+          <Property Name="Lineas" Type="int" />
+          <Property Name="SubTotal" Type="money" />
+          <Property Name="iDVenta" Type="uniqueidentifier" />
+          <Property Name="Row" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="PaladarMobileModelStoreContainer">
+          <EntitySet Name="Cabecera" EntityType="Self.Cabecera" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PaladarMobileModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cabecera">
+          <Key>
+            <PropertyRef Name="Row" />
+          </Key>
+          <Property Name="iDCliente" Type="Guid" />
+          <Property Name="FechaVenta" Type="DateTime" Precision="3" />
+          <Property Name="Monto" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Lineas" Type="Int32" />
+          <Property Name="SubTotal" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="iDVenta" Type="Guid" />
+          <Property Name="Row" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="PaladarMobileEntities5" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cabecera" EntityType="Self.Cabecera" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PaladarMobileModelStoreContainer" CdmEntityContainer="PaladarMobileEntities5">
+          <EntitySetMapping Name="Cabecera">
+            <EntityTypeMapping TypeName="PaladarMobileModel.Cabecera">
+              <MappingFragment StoreEntitySet="Cabecera">
+                <ScalarProperty Name="iDCliente" ColumnName="iDCliente" />
+                <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+                <ScalarProperty Name="Monto" ColumnName="Monto" />
+                <ScalarProperty Name="Lineas" ColumnName="Lineas" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="iDVenta" ColumnName="iDVenta" />
+                <ScalarProperty Name="Row" ColumnName="Row" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PaladarMobileModel2StoreContainer" CdmEntityContainer="PaladarMobileEntities7">
+    <EntitySetMapping Name="Lineas">
+      <EntityTypeMapping TypeName="PaladarMobileModel2.Lineas">
+        <MappingFragment StoreEntitySet="Lineas">
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="iDVenta" ColumnName="iDVenta" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
