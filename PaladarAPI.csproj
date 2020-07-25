@@ -163,7 +163,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\CabecerasController.cs" />
+    <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Controllers\DescuentosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LineasController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -190,6 +192,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Cabecera.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Categorias.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Categorias.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Categorias.cs">
+      <DependentUpon>Categorias.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Categorias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Categorias.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Categorias1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Categorias.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Clientes.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -207,6 +227,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Clientes.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Descuento.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Descuento.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Descuento.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Descuento.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Descuento.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Descuento.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Descuentos.cs">
+      <DependentUpon>Descuento.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Lineas.Context.cs">
       <AutoGen>True</AutoGen>
@@ -266,6 +304,16 @@
       <DependentUpon>Cabecera.edmx</DependentUpon>
       <LastGenOutput>Cabecera1.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\Categorias.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Categorias.edmx</DependentUpon>
+      <LastGenOutput>Categorias.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Categorias.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Categorias.edmx</DependentUpon>
+      <LastGenOutput>Categorias1.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\Clientes.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Clientes.edmx</DependentUpon>
@@ -275,6 +323,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Clientes.edmx</DependentUpon>
       <LastGenOutput>Clientes1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Descuento.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Descuento.edmx</DependentUpon>
+      <LastGenOutput>Descuento.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Descuento.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Descuento.edmx</DependentUpon>
+      <LastGenOutput>Descuento.cs</LastGenOutput>
     </Content>
     <Content Include="Models\Lineas.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -344,6 +402,20 @@
     </EntityDeploy>
     <Content Include="Models\Productos.edmx.diagram">
       <DependentUpon>Productos.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Categorias.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Categorias.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Categorias.edmx.diagram">
+      <DependentUpon>Categorias.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Descuento.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Descuento.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Descuento.edmx.diagram">
+      <DependentUpon>Descuento.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

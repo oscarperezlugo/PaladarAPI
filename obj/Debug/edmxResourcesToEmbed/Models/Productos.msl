@@ -9,6 +9,11 @@
           <ScalarProperty Name="iDProducto" ColumnName="iDProducto" />
           <ScalarProperty Name="Row" ColumnName="Row" />
           <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="PrecioD" ColumnName="PrecioD" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Impuesto" ColumnName="Impuesto" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

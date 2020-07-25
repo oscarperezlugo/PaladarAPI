@@ -9,6 +9,11 @@
     <Property Name="iDProducto" Type="Guid" />
     <Property Name="Row" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="PrecioD" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Categoria" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Impuesto" Type="String" MaxLength="50" />
+    <Property Name="Descuento" Type="String" MaxLength="50" />
   </EntityType>
   <EntityContainer Name="PaladarMobileEntities8" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Producto" EntityType="Self.Producto" />
