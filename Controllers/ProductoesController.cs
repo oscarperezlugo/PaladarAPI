@@ -14,7 +14,7 @@ namespace PaladarAPI.Controllers
 {
     public class ProductoesController : ApiController
     {
-        private PaladarMobileEntities8 db = new PaladarMobileEntities8();
+        private PaladarMobileEntities11 db = new PaladarMobileEntities11();
 
         // GET: api/Productoes
         public IQueryable<Producto> GetProducto()

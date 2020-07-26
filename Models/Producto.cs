@@ -21,7 +21,7 @@ namespace PaladarAPI.Models
         public byte[] Foto { get; set; }
         public Nullable<decimal> PrecioD { get; set; }
         public string Categoria { get; set; }
-        public int Cantidad { get; set; }
+        public Nullable<int> Cantidad { get; set; }
         public string Impuesto { get; set; }
         public string Descuento { get; set; }
     }

@@ -169,6 +169,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LineasController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PagosController.cs" />
     <Compile Include="Controllers\ProductoesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -264,23 +265,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Lineas.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Pagos.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pagos.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Pagos.cs">
+      <DependentUpon>Pagos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Pagos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pagos.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Pagos1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pagos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Producto.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Producto.Context.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Producto.cs">
-      <DependentUpon>Productos.tt</DependentUpon>
+      <DependentUpon>Producto.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Productos.Context.cs">
+    <Compile Include="Models\Producto.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Productos.Context.tt</DependentUpon>
+      <DependentUpon>Producto.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Productos.cs">
+    <Compile Include="Models\Producto1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Productos.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Productos.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Productos.edmx</DependentUpon>
+      <DependentUpon>Producto.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Request\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -344,15 +363,25 @@
       <DependentUpon>Lineas.edmx</DependentUpon>
       <LastGenOutput>Lineas1.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Productos.Context.tt">
+    <Content Include="Models\Pagos.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Productos.edmx</DependentUpon>
-      <LastGenOutput>Productos.Context.cs</LastGenOutput>
+      <DependentUpon>Pagos.edmx</DependentUpon>
+      <LastGenOutput>Pagos.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Productos.tt">
+    <Content Include="Models\Pagos.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Productos.edmx</DependentUpon>
-      <LastGenOutput>Productos.cs</LastGenOutput>
+      <DependentUpon>Pagos.edmx</DependentUpon>
+      <LastGenOutput>Pagos1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Producto.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Producto.edmx</DependentUpon>
+      <LastGenOutput>Producto.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Producto.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Producto.edmx</DependentUpon>
+      <LastGenOutput>Producto1.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -396,13 +425,6 @@
     <Content Include="Models\Lineas.edmx.diagram">
       <DependentUpon>Lineas.edmx</DependentUpon>
     </Content>
-    <EntityDeploy Include="Models\Productos.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Productos.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Productos.edmx.diagram">
-      <DependentUpon>Productos.edmx</DependentUpon>
-    </Content>
     <EntityDeploy Include="Models\Categorias.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Categorias.Designer.cs</LastGenOutput>
@@ -416,6 +438,20 @@
     </EntityDeploy>
     <Content Include="Models\Descuento.edmx.diagram">
       <DependentUpon>Descuento.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Producto.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Producto.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Producto.edmx.diagram">
+      <DependentUpon>Producto.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Pagos.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Pagos.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Pagos.edmx.diagram">
+      <DependentUpon>Pagos.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

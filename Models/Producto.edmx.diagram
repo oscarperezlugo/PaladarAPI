@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3110608bea6e4321a96097139896618b" Name="Diagram1">
+      <Diagram DiagramId="a352097887524f7da21c21592eb33908" Name="Diagram1">
         <EntityTypeShape EntityType="PaladarMobileModel3.Producto" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PaladarMobileModel3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Row" />
+    </Key>
+    <Property Name="Producto" Type="varchar(max)" />
+    <Property Name="Precio" Type="money" />
+    <Property Name="iDProducto" Type="uniqueidentifier" />
+    <Property Name="Row" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Foto" Type="image" />
+    <Property Name="PrecioD" Type="money" />
+    <Property Name="Categoria" Type="varchar" MaxLength="50" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="Impuesto" Type="varchar" MaxLength="50" />
+    <Property Name="Descuento" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="PaladarMobileModel3StoreContainer">
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

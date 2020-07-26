@@ -13,10 +13,10 @@ namespace PaladarAPI.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PaladarMobileEntities8 : DbContext
+    public partial class PaladarMobileEntities11 : DbContext
     {
-        public PaladarMobileEntities8()
-            : base("name=PaladarMobileEntities8")
+        public PaladarMobileEntities11()
+            : base("name=PaladarMobileEntities11")
         {
         }
     
