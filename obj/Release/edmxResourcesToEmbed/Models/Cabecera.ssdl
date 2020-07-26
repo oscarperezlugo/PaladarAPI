@@ -12,6 +12,9 @@
     <Property Name="iDVenta" Type="uniqueidentifier" />
     <Property Name="Row" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="TipoVenta" Type="varchar" MaxLength="50" />
+    <Property Name="Metodo" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar(max)" />
   </EntityType>
   <EntityContainer Name="PaladarMobileModelStoreContainer">
     <EntitySet Name="Cabecera" EntityType="Self.Cabecera" Schema="dbo" store:Type="Tables" />

@@ -12,6 +12,9 @@
           <ScalarProperty Name="iDVenta" ColumnName="iDVenta" />
           <ScalarProperty Name="Row" ColumnName="Row" />
           <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TipoVenta" ColumnName="TipoVenta" />
+          <ScalarProperty Name="Metodo" ColumnName="Metodo" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

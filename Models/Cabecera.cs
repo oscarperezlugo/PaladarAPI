@@ -22,5 +22,8 @@ namespace PaladarAPI.Models
         public Nullable<System.Guid> iDVenta { get; set; }
         public int Row { get; set; }
         public string Status { get; set; }
+        public string TipoVenta { get; set; }
+        public string Metodo { get; set; }
+        public string Direccion { get; set; }
     }
 }

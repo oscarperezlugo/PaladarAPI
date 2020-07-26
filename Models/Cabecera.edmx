@@ -17,6 +17,9 @@
           <Property Name="iDVenta" Type="uniqueidentifier" />
           <Property Name="Row" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Status" Type="varchar" MaxLength="50" />
+	  <Property Name="TipoVenta" Type="varchar" MaxLength="50" />
+	  <Property Name="Metodo" Type="varchar" MaxLength="50" />
+	  <Property Name="Direccion" Type="varchar(max)"/>
         </EntityType>
         <EntityContainer Name="PaladarMobileModelStoreContainer">
           <EntitySet Name="Cabecera" EntityType="Self.Cabecera" Schema="dbo" store:Type="Tables" />
@@ -38,6 +41,9 @@
           <Property Name="iDVenta" Type="Guid" />
           <Property Name="Row" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+	  <Property Name="TipoVenta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+	  <Property Name="Metodo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+	  <Property Name="Direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="PaladarMobileEntities5" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Cabecera" EntityType="Self.Cabecera" />
@@ -59,6 +65,9 @@
                 <ScalarProperty Name="iDVenta" ColumnName="iDVenta" />
                 <ScalarProperty Name="Row" ColumnName="Row" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
+	 	<ScalarProperty Name="TipoVenta" ColumnName="TipoVenta" />
+		<ScalarProperty Name="Metodo" ColumnName="Metodo" />
+		<ScalarProperty Name="Direccion" ColumnName="Direccion" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
