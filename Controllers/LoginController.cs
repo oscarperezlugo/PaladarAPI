@@ -16,6 +16,7 @@ namespace PaladarAPI.Controllers
         string Direccion;
         string Telefono;
         string Correo;
+        System.Guid? IDC;
         public IHttpActionResult VerifyPassword(Models.Request.Login user)
         {
             Models.PaladarMobileEntities6 db = new Models.PaladarMobileEntities6();
@@ -31,6 +32,7 @@ namespace PaladarAPI.Controllers
                     Direccion = myUser.Direccion;
                     Telefono = myUser.Telefono;
                     Correo = myUser.Correo;
+                    IDC = myUser.iDCliente;
                 }
                 else
                 {
@@ -38,7 +40,7 @@ namespace PaladarAPI.Controllers
                     TokenRes = token;
                     ID = 0;
                 }
-                return Json(new { Token = TokenRes.ToString(), iD = ID, nombre = Nombre, apellido = Apellido, direccion = Direccion, telefono = Telefono, correo = Correo  }); ;
+                return Json(new { Token = TokenRes.ToString(), iD = ID, nombre = Nombre, apellido = Apellido, direccion = Direccion, telefono = Telefono, correolog = Correo,  guid = IDC  }); ;
             }
         }
     }
