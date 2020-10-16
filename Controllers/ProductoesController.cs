@@ -9,16 +9,19 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using PaladarAPI.Models;
+using System.Web.Http.Cors;
+
 
 namespace PaladarAPI.Controllers
 {
+    
     public class ProductoesController : ApiController
     {
         private PaladarMobileEntities11 db = new PaladarMobileEntities11();
 
         // GET: api/Productoes
         public IQueryable<Producto> GetProducto()
-        {
+        {            
             return db.Producto;
         }
 

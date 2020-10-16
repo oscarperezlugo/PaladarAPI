@@ -97,3 +97,6 @@ C:\Users\oscar\source\repos\PaladarAPI\obj\Debug\PaladarAPI.csproj.CoreCompileIn
 C:\Users\oscar\source\repos\PaladarAPI\obj\Debug\PaladarAPI.csproj.CopyComplete
 C:\Users\oscar\source\repos\PaladarAPI\obj\Debug\PaladarAPI.dll
 C:\Users\oscar\source\repos\PaladarAPI\obj\Debug\PaladarAPI.pdb
+C:\Users\oscar\source\repos\PaladarAPI\bin\System.Web.Cors.dll
+C:\Users\oscar\source\repos\PaladarAPI\bin\System.Web.Http.Cors.dll
+C:\Users\oscar\source\repos\PaladarAPI\bin\System.Web.Http.Cors.xml

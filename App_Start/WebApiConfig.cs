@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace PaladarAPI
 {
@@ -9,8 +10,9 @@ namespace PaladarAPI
     {
         public static void Register(HttpConfiguration config)
         {
+            var corsAttr = new EnableCorsAttribute("*", "*", "*");
             // Configuración y servicios de API web
-
+            config.EnableCors(corsAttr);
             // Rutas de API web
             config.MapHttpAttributeRoutes();
 

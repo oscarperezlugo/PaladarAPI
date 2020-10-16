@@ -14,6 +14,8 @@
     <Property Name="Cantidad" Type="int" />
     <Property Name="Impuesto" Type="varchar" MaxLength="50" />
     <Property Name="Descuento" Type="varchar" MaxLength="50" />
+    <Property Name="Tag" Type="varchar" MaxLength="50" />
+    <Property Name="inCart" Type="int" />
   </EntityType>
   <EntityContainer Name="PaladarMobileModel3StoreContainer">
     <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />

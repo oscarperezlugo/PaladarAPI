@@ -24,5 +24,7 @@ namespace PaladarAPI.Models
         public Nullable<int> Cantidad { get; set; }
         public string Impuesto { get; set; }
         public string Descuento { get; set; }
+        public string Tag { get; set; }
+        public Nullable<int> inCart { get; set; }
     }
 }
